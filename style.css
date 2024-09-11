@@ -1,28 +1,104 @@
+/* General Styles */
 body {
   font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4;
 }
 
+/* App Container */
 #app {
   max-width: 600px;
-  margin: 50px auto;
+  margin: 0 auto;
   padding: 20px;
-  background-color: white;
+  background: #fff;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-button {
-  background-color: #42b983;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  cursor: pointer;
+/* Header */
+h1 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Task Form */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input[type="text"] {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
   border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+button {
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
 button:hover {
-  background-color: #358a65;
+  background-color: #218838;
+}
+
+/* Error Message */
+p {
+  color: #d9534f;
+  font-size: 14px;
+}
+
+/* Task Filter */
+button {
+  margin-right: 10px;
+}
+
+button:last-of-type {
+  margin-right: 0;
+}
+
+button.active {
+  background-color: #007bff;
+  color: #fff;
+}
+
+/* Task List */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+span.completed {
+  text-decoration: line-through;
+  color: #6c757d;
+}
+
+button {
+  background-color: #dc3545;
+}
+
+button:hover {
+  background-color: #c82333;
 }
