@@ -17,4 +17,4 @@ This is a simple task management application built with Vue.js and Vuex. It allo
 3. Run `npm run serve` to start the development server.
 
 ## API
-The application uses a fake REST API to persist tasks. The API calls are made using axios.
+The application uses a fake REST API to persist tasks. The API calls are made using fetch.
